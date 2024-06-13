@@ -1,1 +1,3 @@
 # Complier
+This project learn from Dragon zap on on Daniel McCarthy's compiler course.The content of codes covers 1-100 episodes of the online course.
+The two-part lexer and a parser feature builds a solid foundation for a richer and more powerful compiler, covering not only scope of parameters and structs, break and continue AST, but also read-only types, in-memory offset and alignment issues, stack, goto, cast, etc. switch...  case statements, arrays, binary to hexadecimal conversion to decimal, and code monitoring are a lot of things you didn't cover in your course.  This is to build a more perfect compiler foundation and architecture, this lexer and a parser can almost meet all the syntax of the c language basic programs. 
