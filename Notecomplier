@@ -1,0 +1,17 @@
+step 1: lexical analysis 也就是词汇分析
+token have a type and value,the lexical aims to recognize the keyword.
+keyword: operator,data type,and so on..
+所以词汇分析就是把程序中的关键词识别出来并装载到token里。
+the lexor will reduce the work of parser 减少解析器的工作量，也就是说这是一个初步的解析器，
+他不会根据库函数去特定的识别一些keyword
+discarding some unnecessary information like space and tab制表符
+const 数据类型 每次初始化后必须赋值，而且不能有相同的值，因为有const 的数据类型会加载在静态内
+存中，只有结束程序的时候才会自动删除
+void* 空指针类型，任何指针类型都可以赋值给空指针类型，反之不可以，必须加上强转换 int *，此外
+空指针类型不能进行运算，但可以进行关系运算
+unsign int 类型，也就是无符号整型，如果与有符号整型进行比较，系统会默认将所有整型都转换成无符号
+进行比较，但是往往这种比较都是不正确的，因为无符号整型对应有二进制存储，而转换成十进制后不再是原
+来的整型
+关键字 union 这种可以看成是一种结构体，他的主要目的是让该结构体中的变量拥有相同的起止地址，目的
+是为了节省存储数据的空间
+step 2 create the token structure
